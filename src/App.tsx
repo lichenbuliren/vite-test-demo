@@ -1,9 +1,15 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
+import { Toast } from 'antd-mobile';
 
 function App() {
   const [count, setCount] = useState(0)
+
+  useEffect(() => {
+    
+    Toast.show('test', 2000)
+  }, []);
 
   return (
     <div className="App">

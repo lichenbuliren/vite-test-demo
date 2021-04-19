@@ -3,10 +3,14 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build --mode qa",
+    "build:qa": "tsc && vite build --mode qa",
+    "build": "tsc && vite build",
     "serve": "vite preview"
   },
   "dependencies": {
+    "antd-mobile": "^2.3.4",
+    "less": "^4.1.1",
+    "postcss": "^8.2.10",
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
   },
@@ -16,6 +20,7 @@
     "@vitejs/plugin-react-refresh": "^1.3.1",
     "rollup-plugin-visualizer": "^5.3.6",
     "typescript": "^4.1.2",
-    "vite": "^2.1.5"
+    "vite": "^2.1.5",
+    "vite-plugin-imp": "^2.0.7"
   }
 }
